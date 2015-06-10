@@ -1,0 +1,26 @@
+@if(isset($contactdetails) && is_array($contactdetails))
+ 	@foreach($contactdetails as $type => $details)
+		@foreach($details as $name => $values)
+			@foreach($values as $value)
+				<div class="form-group">
+					<label for="contactdetails[{{ $type }}][{{ $name }}][]" class="col-md-2 col-xs-12">
+						@lang('contactdetails.'.$type)
+						({{ $name }}):
+					</label>
+					<div class="col-xs-12 col-md-10">
+					<div class="input-group">
+						{{-- 
+						STRANGE BUG OVER HERE?
+						when enabled, it produce an error when we submit the form with  validation-errors (other errors than this one...)
+						 --}}
+{{-- 						{!! Form::input($type, "contactdetails[$type][$name][]", $value, ['class' => 'form-control']); !!} --}}
+						{{-- Temporarly solution: --}}
+						<input class="form-control" name="contactdetails[{{$type}}][{{$name}}][]" type="{{$type}}" value="{{$value}}">
+						{{-- End of this solution... --}}
+						<span class="input-group-btn"><button class="btn btn-danger" type="button" onclick="removeContactdetail(this)"><span class="glyphicon glyphicon-remove-circle"></span></button></span>
+					</div></div>
+				</div>			
+			@endforeach
+		@endforeach
+	@endforeach 
+@endif

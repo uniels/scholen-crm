@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Schoolprof
+        psr4_prefix: Schoolprof
+        src_path: app
