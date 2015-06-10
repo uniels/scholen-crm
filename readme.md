@@ -1,4 +1,21 @@
-## Laravel PHP Framework
+## Scholen-CRM
+"Scholen-CRM" is a contact relation management-application for logging contact with the dutch primary education.
+The current version has the following features: 
+* Add/delete users to this application (only logged in users are able to access the data).
+* Import school-information from the CFI-datafile.
+* View school-information, including:
+** The address (including map from OSM)
+** List of underlying schools (if any)
+** Link to the parent-school/board (if one)
+** List of people (contacts) related to this school, and the possibility to add new persons/contacts to this school
+** Log of contactmoments, and the possibility to add new logs.
+* Overview of all people (contacts) included in this application, and
+** See their relationships with one or many schools.
+** See the contactlog corresponding this person.
+
+This application is build upon the framework Laravel.
+
+### Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
@@ -10,13 +27,6 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
 
 ### License
 
