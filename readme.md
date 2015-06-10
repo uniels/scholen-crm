@@ -4,14 +4,14 @@ The current version has the following features:
 * Add/delete users to this application (only logged in users are able to access the data).
 * Import school-information from the CFI-datafile.
 * View school-information, including:
-** The address (including map from OSM)
-** List of underlying schools (if any)
-** Link to the parent-school/board (if one)
-** List of people (contacts) related to this school, and the possibility to add new persons/contacts to this school
-** Log of contactmoments, and the possibility to add new logs.
+  * The address (including map from OSM)
+  * List of underlying schools (if any)
+  * Link to the parent-school/board (if one)
+  * List of people (contacts) related to this school, and the possibility to add new persons/contacts to this school
+  * Log of contactmoments, and the possibility to add new logs.
 * Overview of all people (contacts) included in this application, and
-** See their relationships with one or many schools.
-** See the contactlog corresponding this person.
+  * See their relationships with one or many schools.
+  * See the contactlog corresponding this person.
 
 This application is build upon the framework Laravel.
 
