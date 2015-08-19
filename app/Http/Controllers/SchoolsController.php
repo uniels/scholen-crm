@@ -34,7 +34,6 @@ class SchoolsController extends Controller {
 	 */
 	public function create()
 	{
-		//
 		return view('schools.create');
 	}
 
@@ -135,39 +134,5 @@ class SchoolsController extends Controller {
 
 		return json_encode($persons->get());
 	}
-
-	// /**
-	//  * Show the form for editing the specified resource.
-	//  *
-	//  * @param  int  $id
-	//  * @return Response
-	//  */
-	// public function edit($id)
-	// {
-	// 	//
-	// 	return view('schools.edit');
-	// }
-
-	// *
-	//  * Update the specified resource in storage.
-	//  *
-	//  * @param  int  $id
-	//  * @return Response
-	 
-	// public function update($id)
-	// {
-	// 	//
-	// }
-
-	// /**
-	//  * Remove the specified resource from storage.
-	//  *
-	//  * @param  int  $id
-	//  * @return Response
-	//  */
-	// public function destroy($id)
-	// {
-	// 	//
-	// }
 
 }

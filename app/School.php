@@ -49,15 +49,15 @@ class School extends Model {
 	// }
 
 
-	public function link($heading = null)
-	{
-		$heading = $heading?:$this->display;
-		return "<a href='".action('SchoolsController@show',$this->brin_es)."'>$heading</a>";
-	}	
+	
 
 	/*-------------
 		The getAttributes
 	----------------*/
+	public function getShowpageAttribute()
+	{
+		return action('SchoolsController@show',$this->brin_es);
+	}
 
 	public function getWwwAttribute($url)
 	{

@@ -15,26 +15,26 @@ class Contact extends Model {
 	];
 	
 
-	//Links
-	public function link($heading = null)
-	{
-		$heading = $heading?:$this->display;
-		return "<a href='".action('ContactsController@show',$this->id)."'>$heading</a>";
-	}
-	public function linkedit($heading = null)
-	{
-		$heading = $heading?:trans('template.edit');
-		return "<a href='".action('ContactsController@edit',$this->id)."'>$heading</a>";
-	}
-	public function linkdestroy($heading = null)
-	{
-		$heading = $heading?:trans('template.remove');
-		$link = \Form::open(array('route' => array('contacts.destroy', $this->id), 'method' => 'delete'));
-		$link.= '<button type="submit" class="btn btn-danger btn-xs">'.$heading.'</button>';
-		$link.= \Form::close();
+	// //Links
+	// public function link($heading = null)
+	// {
+	// 	$heading = $heading?:$this->display;
+	// 	return "<a href='".action('ContactsController@show',$this->id)."'>$heading</a>";
+	// }
+	// public function linkedit($heading = null)
+	// {
+	// 	$heading = $heading?:trans('template.edit');
+	// 	return "<a href='".action('ContactsController@edit',$this->id)."'>$heading</a>";
+	// }
+	// public function linkdestroy($heading = null)
+	// {
+	// 	$heading = $heading?:trans('template.remove');
+	// 	$link = \Form::open(array('route' => array('contacts.destroy', $this->id), 'method' => 'delete'));
+	// 	$link.= '<button type="submit" class="btn btn-danger btn-xs">'.$heading.'</button>';
+	// 	$link.= \Form::close();
 
-		return $link;	
-	}
+	// 	return $link;	
+	// }
 
 	// GetAttributes
 	public function getDisplayAttribute()

@@ -148,6 +148,7 @@ return [
 		/*
 		 *	Added 3rd party providers
 		 */
+		'Barryvdh\Debugbar\ServiceProvider',		#alias: debugbar
 		'Laracasts\Flash\FlashServiceProvider',		#alias: flash
 		'Maatwebsite\Excel\ExcelServiceProvider',	#alias: excel
 		'yajra\Datatables\DatatablesServiceProvider', #alias: Datatables
@@ -179,6 +180,7 @@ return [
 		'Crypt'     => 'Illuminate\Support\Facades\Crypt',
 		'DB'        => 'Illuminate\Support\Facades\DB',
 		'Datatables' => 'yajra\Datatables\Datatables',
+		'Debugbar'	=> 'Barryvdh\Debugbar\Facade',
 		'Eloquent'  => 'Illuminate\Database\Eloquent\Model',
 		'Event'     => 'Illuminate\Support\Facades\Event',
 		'Excel' 	=> 'Maatwebsite\Excel\Facades\Excel',

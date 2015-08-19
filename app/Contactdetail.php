@@ -10,8 +10,6 @@ class Contactdetail extends Model {
   protected $dates 		= ['deleted_at'];
   protected $fillable 	= ['contact_id','type','label','value'];
 
-  
-  
 
   ///////////////////
   // The relations //

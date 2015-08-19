@@ -15,9 +15,9 @@ use Datatables;
 
 class PeopleController extends Controller {
 
-	//use SoftDeletes;
+    //use SoftDeletes;
 
-	/**
+    /**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
@@ -68,6 +68,7 @@ class PeopleController extends Controller {
 	 */
 	public function show(Person $person)
 	{
+		$person->load('contacts','personal');
 		return view('people.show',compact('person'));
 	}
 

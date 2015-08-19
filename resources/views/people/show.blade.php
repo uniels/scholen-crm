@@ -39,10 +39,10 @@
 	 	</div>
 	 	<div role="tabpanel" class="tab-pane" id="contactlogshow">
 	 		<h2>@lang('contactlog.title')</h2>
-	 		@include('contactlog.datatable',[
+{{-- 	 		@include('contactlog.datatable',[
 			'model' => 'person',
 			'id'	=> $person->id
-			])
+			]) --}}
 	 	</div>
 
 	</div>

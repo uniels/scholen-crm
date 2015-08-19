@@ -32,7 +32,9 @@
 				{{ $contact->relation->place }}
 			</td>
 			<td data-field="actions" data-align="left">
-				{!! $contact->linkdestroy() !!}
+				{!! Form::open(array('route' => array('contacts.destroy', $contact->id), 'method' => 'delete')) !!}
+				<button type="submit" class="btn btn-danger btn-xs"> @lang('template.remove') </button>
+				{!! Form::close() !!}
 			</td>									
 		</tr>
 	@endforeach

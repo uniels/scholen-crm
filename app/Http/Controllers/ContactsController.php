@@ -134,15 +134,4 @@ class ContactsController extends Controller {
 		return json_encode($contacts->get());
 	}
 
-	// public function getContactDetails(Request $request)
-	// {
-	// 	$this->validate($request,[
-	// 		'id'	=> 'required|integer|exists:contacts,id'
-	// 		]);
-	// 	$contact = Contact::findOrFail($request->input('id'));
-	// 	$list['contact'] = $contact->contactdetails;
-	// 	$list['personal']= $contact->person->contactdetails;
-	// 	return  json_encode($list);
-	// }
-
 }

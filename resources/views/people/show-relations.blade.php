@@ -2,7 +2,7 @@
 
 
 [LIST OF ALL RELATIONS]
-{{ var_dump($person->relations()->toArray()) }}
+{{-- {{ var_dump($person->relations()->toArray()) }} --}}
 
 @else
 

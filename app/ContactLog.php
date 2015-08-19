@@ -16,15 +16,6 @@ class ContactLog extends Model {
 		'agreements',
 	];
 
-
-	//Getters:	
-	// public function getOutboundAttribute($outbound)
-	// {	
-	// 	$direction = !$outbound?'left':'right';
-	// 	return "<span class='glyphicon glyphicon-chevron-".$direction."'></span>";
-	// }
-
-
 	////////////////
 	//Relations: //
 	////////////////
